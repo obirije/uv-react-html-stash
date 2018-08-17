@@ -8,8 +8,19 @@ module.exports = function (app) {
   
     email: {type: String, unique: true},
     password: { type: String },
-  
-  
+  	is_school: { type: Boolean},
+  	phone_one: {type: String, unique: true},
+  	phone_two: String,
+  	address: String,
+  	about: String,
+  	account_no: String,
+  	logo: String,
+  	display_name: String,
+  	administrator_title: String,
+  	administrator_name: String,
+  	fullname: String,
+
+
   }, {
     timestamps: true
   });
