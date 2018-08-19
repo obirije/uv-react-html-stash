@@ -9,7 +9,7 @@ module.exports = function (app) {
     email: {type: String, unique: true},
     password: { type: String },
   	is_school: { type: Boolean},
-  	phone_one: {type: String, unique: true},
+  	phone_one: {type: String, required: true, unique: true},
   	phone_two: String,
   	address: String,
   	about: String,
@@ -19,7 +19,7 @@ module.exports = function (app) {
   	administrator_title: String,
   	administrator_name: String,
   	fullname: String,
-
+    is_platform_admin: { type: Boolean, default: false }
 
   }, {
     timestamps: true
