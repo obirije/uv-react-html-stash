@@ -9,7 +9,7 @@ module.exports = function (app) {
     email: {type: String, unique: true},
     password: { type: String },
   	is_school: { type: Boolean},
-  	phone_one: {type: String, required: true, unique: true},
+  	phone_one: {type: String},
   	phone_two: String,
   	address: String,
   	about: String,
