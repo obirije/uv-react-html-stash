@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Uvune" />
-    <meta name="description" content="Hassle free payment process for tuitions"/>
-
-    <title>Pay Tuitions with Uvune</title>
-
+    <head>
+    <meta charset=utf-8>
+      <meta http-equiv=x-ua-compatible content="ie=edge">
+      <meta name=viewport content="width=device-width, initial-scale=1">
+      <title>Uvune - Payments Solution</title>
+      <meta property="og:title" content="Uvune Payments Solution" />
+      <meta name="twitter:title" content="Uvune Payments Solution" />
+      <meta name=description content="Convenient and hassle free payment process for tuition." />
+      <!-- <link href="../stylesheets/styles-1be9b994.css" rel=stylesheet /> -->
 
     <link rel="stylesheet" href="style.css">
 
   </head>
-  <body>
+  <body className="page-modular">
+    <div id="FlashMessages-Container"></div>
+    <div id="NewsBanner-Container"></div>
     <div id="app">
-      <!-- <div class="hero is-bold is-fullheight">
-        <div class="level-item">
-          <a class="button is-loading is-large is-white">Loading</a>
-        </div>
-        <div class="level-item">
-          <span>Just chill...</span>
-        </div>
-      </div> -->
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
     </div>
+    <style type="text/css">
+      /*#app {
+        background-color: #fbfcfd;
+      }*/
+
+      .spinner {
+        margin: 100px auto;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        
+        -webkit-animation: sk-rotate 2.0s infinite linear;
+        animation: sk-rotate 2.0s infinite linear;
+      }
+
+      .dot1, .dot2 {
+        width: 60%;
+        height: 60%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background-color: #0bb634;
+        border-radius: 100%;
+        
+        -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+        animation: sk-bounce 2.0s infinite ease-in-out;
+      }
+
+      .dot2 {
+        top: auto;
+        bottom: 0;
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+      }
+
+      @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+      @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+      @-webkit-keyframes sk-bounce {
+        0%, 100% { -webkit-transform: scale(0.0) }
+        50% { -webkit-transform: scale(1.0) }
+      }
+
+      @keyframes sk-bounce {
+        0%, 100% { 
+          transform: scale(0.0);
+          -webkit-transform: scale(0.0);
+        } 50% { 
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+        }
+      }
+    </style>
+
     <script type="text/javascript" src="bundle.min.js"></script>
+    <script src="polyfills.js"></script>
+    <script src="global.js"></script>
   </body>
 </html>
