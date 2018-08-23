@@ -8,7 +8,8 @@ module.exports = function (app) {
   const payment = new Schema({
     name: { type: String, required: true },
     description: String,
-    amount: String
+    amount: String,
+    owner: Schema.Types.ObjectId
   }, {
     timestamps: true
   });
