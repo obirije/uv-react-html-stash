@@ -6,9 +6,10 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient;
   const notifications = new Schema({
-    owner: Schema.Types.ObjectId,
+    created_by: Schema.Types.ObjectId,
     message: String,
-    type: String
+    type: String,
+    sent_to: Schema.Types.ObjectId
   }, {
     timestamps: true
   });
