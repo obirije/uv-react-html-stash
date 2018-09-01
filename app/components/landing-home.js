@@ -1,8 +1,15 @@
 import React from 'React';
-
+import Illust from './uvune-illust-svg.svg';
 //import './landing.sass';
 
 export default class LandingContainer extends React.Component {
+
+	constructor(props){
+		super(props)
+
+		this.illust = new Image();
+		this.illust.src = Illust;
+	}
 
 	render(){
 
@@ -14,7 +21,7 @@ export default class LandingContainer extends React.Component {
 	                <div className="Header-Background Header-Background--narrative">
 	                    <div className="Header-Background-Margins">
 	                        <div className="Header-Background-Gradient"></div>
-	                        <div className="Header-Background-Fill " style={{backgroundImage: "url(https://www.datocms-assets.com/5835/1531927504-hero-education-desktop.svg)"}}></div>
+	                        <div className="Header-Background-Fill " style={{backgroundImage: `url(${this.illust.src})`}}></div>
 	                    </div>
 	                </div>
 	                <div className="Wrapper Wrapper--hero">
