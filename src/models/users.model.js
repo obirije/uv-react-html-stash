@@ -19,7 +19,8 @@ module.exports = function (app) {
   	administrator_title: String,
   	administrator_name: String,
   	fullname: String,
-    is_platform_admin: { type: Boolean, default: false }
+    is_platform_admin: { type: Boolean, default: false },
+    image_id: String 
 
   }, {
     timestamps: true
