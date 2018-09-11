@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 //import './main.sass';
 import LandingContainer from './components/landing-home';
+import Profile from './components/profile/profile.js';
 import Logo from './uvune-logo.png';
 
 
@@ -50,14 +51,22 @@ class Layout extends React.Component {
 	render(){
 		return (
 			<Router>
-			
+			 
 				    <div className="SiteWrapper">
 
 				    	<Header myLogo={this.myLogo} />
 
 				    	<MobileNav />
 
-						<Route path="/" exact component={withTracker(LandingContainer)} />
+                        <Switch>
+
+    						<Route path="/" exact component={withTracker(LandingContainer)} />
+                            <Route path="/:phone" exact component={withTracker(Profile)} />
+
+                            <Route component={withTracker(NoMatch)}/>
+
+                        </Switch>
+
 					</div>
 
 				
@@ -120,6 +129,12 @@ const MobileNav = (props) => {
         </div>
 	)
 }
+
+const NoMatch = ({ location }) => (
+  <div style={{ marginTop: '10%'}} >
+    <h3>No match for <code>{location.pathname}</code></h3>
+  </div>
+)
 
 const app = document.getElementById('app');
 

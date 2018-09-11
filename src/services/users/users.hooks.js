@@ -1,4 +1,5 @@
 const { authenticate } = require('@feathersjs/authentication').hooks;
+const search = require('feathers-mongodb-fuzzy-search');
 
 const {
   hashPassword, protect
@@ -7,7 +8,9 @@ const {
 module.exports = {
   before: {
     all: [],
-    find: [],
+    find: [ search(), search({
+      fields: ['display_name']
+    })],
     get: [],
     create: [ hashPassword() ],
     update: [ hashPassword(),  authenticate('jwt') ],

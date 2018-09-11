@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+    <meta charset=utf-8>
+      <meta http-equiv=x-ua-compatible content="ie=edge">
+      <meta name=viewport content="width=device-width, initial-scale=1">
+      <title>Uvune - Payments Solution</title>
+      <meta property="og:title" content="Uvune Payments Solution" />
+      <meta name="twitter:title" content="Uvune Payments Solution" />
+      <meta name=description content="Convenient and hassle free payment process for tuition." />
+      <!-- <link href="../stylesheets/styles-1be9b994.css" rel=stylesheet /> -->
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body class="page-modular">
+    <div id="FlashMessages-Container"></div>
+    <div id="NewsBanner-Container"></div>
+
+    <div class="SiteWrapper">
+      <header class="Header Header--withImage" data-js="header" style="background-color: #F2FFF5;">
+          <div class="Header-Wrapper"> <a class="Header-Logo" href="https://uvune.com/" title="Uvune Home"> 
+            <img src="uvune-logo.png" alt="Uvune logo" title="" class="lazyload Header-Logo--blue" width="450" height="300" /> </a>
+                <div class="MainNavMenu">
+                    <div class="MainNavMenu-Items">
+
+                        <div class="Dropdown" data-js="dropdown">
+                            <button type="button" data-js="dropdown-button" class="Button Button--primary Button-- Button--dropdown"> Make a payment </button>
+                            <ul class="Dropdown-menu MainNav-submenu Dropdown-menu--button" data-js="dropdown-submenu">
+                                <li class="Dropdown-item"><a href="#" class="Dropdown-link" title="Pay" target="_self">Pay</a></li>
+                                <li class="Dropdown-item"><a href="#" class="Dropdown-link" title="Login" target="_self">Login</a></li>
+                                <li class="Dropdown-item"><a href="#" class="Dropdown-link" title="Support" target="_self">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="Header-ToggleButton" data-js="hamburgerMenuButton"></button>
+            </div>
+        </header>
+
+        <!-- Mobile Nav -->
+        <div class="MainNavMenu-Mobile" data-js="mobileMenu" style="margin-top: 80px;">
+            <div class="MainNavMenu-Mobile-Container" data-js="mobileMenuContainer" aria-label="Main menu" role="menu">
+                <div class="MainNavMenu-Mobile-Header">
+
+                    <div class="MainNavMenu-Mobile-CloseButton-Wrapper">
+                        <button class="MainNavMenu-Mobile-CloseButton" data-js="mobileCloseMenuButton"></button>
+                    </div>
+                </div>
+                <div class="MainNavMenu-Mobile-Container-Items" role="menu">
+
+                    <div class="MainNavMenu-Mobile-Dropdown" role="menuitem"> <a href="#" class="MainNavMenu-Mobile-Dropdown-Current MainNavMenu-Mobile-Dropdown-Current--link" role="menuitem" tabIndex="0"> Company </a> </div>
+                    <div class="MainNavMenu-Mobile-Dropdown" role="menuitem"> <a href="#" class="MainNavMenu-Mobile-Dropdown-Current MainNavMenu-Mobile-Dropdown-Current--link" role="menuitem" tabIndex="0"> Support </a> </div>
+                    <div class="MainNavMenu-Mobile-Dropdown" role="menuitem"> <a href="#" class="MainNavMenu-Mobile-Dropdown-Current MainNavMenu-Mobile-Dropdown-Current--link" role="menuitem" tabIndex="0"> Account </a> </div>
+
+                    <div class="MainNavMenu-Mobile-Dropdown" role="menuitem">
+                        <button type="button" data-js="menuSection" class="Button Button--inverted Button--dropdown"> Make a payment </button>
+                        <ul class="MainNavMenu-Mobile-Dropdown-List">
+                            <li class="MainNavMenu-Mobile-Dropdown-Item"><a href="#" class="MainNavMenu-Mobile-Dropdown-Link" title="Pay">Pay</a></li>
+                            <li class="MainNavMenu-Mobile-Dropdown-Item"><a href="#" class="MainNavMenu-Mobile-Dropdown-Link" title="Login">Login</a></li>
+                            <li class="MainNavMenu-Mobile-Dropdown-Item"><a href="#" class="MainNavMenu-Mobile-Dropdown-Link" title="Support">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <main class="Main" id="main">
+
+              <section class="Hero-Transparent ">
+                  <div class="Header-Background Header-Background--narrative">
+                      <div class="Header-Background-Margins">
+                          <div class="Header-Background-Gradient"></div>
+                          <div class="Header-Background-Fill " style="background-image: url('uvune-illust-svg.svg')"></div>
+                      </div>
+                  </div>
+                  <div class="Wrapper Wrapper--hero">
+                      <h1 class="Hero-Transparent-Title ">Schools, parents and <br/>guardians, save time and <br/> money with Uvune.</h1>
+                      <h2 class="Hero-Transparent-Subtitle ">Uvune's payment solution for education is the standard for ease-of-use, innovation, and cost savings.</h2>
+                      <div class="Hero-Transparent-CTA "> <a href="#" class="Button Button--primary" title="Request a demo">Get an account</a> </div>
+                      <div class="Hero-Transparent-Illustration"> <img class="Hero-Transparent-Illustration-Image" src="uvune-illust-svg.svg" alt="" /> </div>
+                  </div>
+              </section>
+        </main>
+
+    </div>
+<!--     <div id="app">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div> -->
+    <!-- <style type="text/css">
+      /*#app {
+        background-color: #fbfcfd;
+      }*/
+
+      .spinner {
+        margin: 100px auto;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        
+        -webkit-animation: sk-rotate 2.0s infinite linear;
+        animation: sk-rotate 2.0s infinite linear;
+      }
+
+      .dot1, .dot2 {
+        width: 60%;
+        height: 60%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background-color: #0bb634;
+        border-radius: 100%;
+        
+        -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+        animation: sk-bounce 2.0s infinite ease-in-out;
+      }
+
+      .dot2 {
+        top: auto;
+        bottom: 0;
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+      }
+
+      @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+      @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+      @-webkit-keyframes sk-bounce {
+        0%, 100% { -webkit-transform: scale(0.0) }
+        50% { -webkit-transform: scale(1.0) }
+      }
+
+      @keyframes sk-bounce {
+        0%, 100% { 
+          transform: scale(0.0);
+          -webkit-transform: scale(0.0);
+        } 50% { 
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+        }
+      }
+    </style> -->
+
+    <!-- <script type="text/javascript" src="bundle.min.js"></script> -->
+    <script src="polyfills.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>
